@@ -6,7 +6,7 @@
 #include <utility>
 
 #include <stdio.h>
-#include <Windows.h>
+#include <windows.h>
 
 template<typename T>
 struct HandleTraits {

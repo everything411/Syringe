@@ -8,7 +8,7 @@
 #include <string_view>
 #include <utility>
 
-#include <Windows.h>
+#include <windows.h>
 
 struct invalid_command_arguments : std::exception {};
 

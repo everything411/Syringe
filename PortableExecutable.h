@@ -13,6 +13,8 @@
 
 #include <windows.h>
 
+#include <share.h>
+
 struct PEThunkData
 {
 	IMAGE_THUNK_DATA			uThunkData;

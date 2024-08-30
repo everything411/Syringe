@@ -13,6 +13,10 @@
 
 #include <windows.h>
 
+#include <share.h>
+
+#define __FUNCTION__
+
 class SyringeDebugger
 {
 	static constexpr size_t MaxNameLength = 0x100u;

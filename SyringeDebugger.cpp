@@ -12,7 +12,7 @@
 #include <memory>
 #include <numeric>
 
-#include <DbgHelp.h>
+#include <dbghelp.h>
 
 using namespace std;
 
