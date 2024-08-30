@@ -31,12 +31,12 @@ inline auto get_command_line(std::string_view arguments) {
 	try {
 		argument_set ret;
 
-		auto const end_flags = arguments.find('"');
+		auto const end_flags = arguments.find('+');
 		ret.flags = trim(arguments.substr(0, end_flags));
 		if(end_flags != std::string_view::npos) {
 			arguments.remove_prefix(end_flags + 1);
 
-			auto const end_executable = arguments.find('"');
+			auto const end_executable = arguments.find('+');
 			if(end_executable != std::string_view::npos) {
 				ret.executable = trim(arguments.substr(0, end_executable));
 				arguments.remove_prefix(end_executable + 1);
